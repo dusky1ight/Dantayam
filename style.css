@@ -8,10 +8,24 @@
 
 body,
 input{
+    background-image: url("sample_images/image_1.jpg");  
+    aspect-ratio: 
+    width: 100%;
+    opacity: 0.3;
     font-family: 'popins',sans-serif;
 }
 .didiya{
+    font-size: 20px;
     font-family: cursive;
+}
+.didiyacontinue{
+    font-family: cursive;
+    font-size: 20px;
+}
+.w3-round-xlarge{
+    position:absolute;
+    width: 100%;
+    opacity: 0.35;
 }
 .container{
     position: relative;
@@ -19,6 +33,7 @@ input{
     background-color: white;
     min-height: 100vh;
     overflow: hidden;
+    background-image: -moz-radial-gradient();
 
 }
 
