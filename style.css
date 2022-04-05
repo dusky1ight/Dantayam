@@ -10,7 +10,9 @@ body,
 input{
     font-family: 'popins',sans-serif;
 }
-
+.didiya{
+    font-family: cursive;
+}
 .container{
     position: relative;
     width:100%;
@@ -96,10 +98,13 @@ form{
 }
 
 .social-text{
+    display: flex;
+    justify-content: center;
     padding: 0.25cm 0;
 }
 
 .social-media{
+    padding-top: 5%;
     display: flex;
     justify-content: center;
 }
