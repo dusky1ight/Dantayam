@@ -5,6 +5,7 @@
   justify-content: center;
 }
 .title{
+  display: flex;
   font-family:cursive;
   justify-content: center;
   padding-left: 50%;
