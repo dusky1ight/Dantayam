@@ -20,7 +20,7 @@ const addMovie = (ev)=>{
             pre.textContent = '\n' + JSON.stringify(pRecord, '\t',10);
 
             //saving to localStorage
-            localStorage.setItem('aj ka record',JSON.stringify(pRecord));
+            localStorage.setItem('Precord',JSON.stringify(pRecord));
 //            localStorage.setItem('MyMovieList', JSON.stringify(pRecord) );
         }
         document.addEventListener('DOMContentLoaded', ()=>{
