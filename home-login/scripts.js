@@ -14,6 +14,7 @@ function signOut() {
           alert("signed oput chacha!");
           $(".g-signin2").css("display","block");
           $(".data").css("display","none");
+          $(".kucho").css("display","none");
         });
       }
   
