@@ -8,8 +8,7 @@
 
 body,
 input{
-    background-image: url("sample_images/image_1.jpg");  
-    aspect-ratio: 
+    background-image: url("sample_images/image_1.jpg"); 
     width: 100%;
     opacity: 0.3;
     font-family: 'popins',sans-serif;
