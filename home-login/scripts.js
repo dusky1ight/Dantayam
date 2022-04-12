@@ -5,7 +5,6 @@ function onSignIn(googleUser) {
     $("#image").attr('src',profile.getImageUrl());
     $(".data").css("display","block");
     $(".g-signin2").css("display","block");
-    $(".kucho").css("display","block");
   
   }
 function signOut() {
@@ -14,7 +13,6 @@ function signOut() {
           alert("signed oput chacha!");
           $(".g-signin2").css("display","block");
           $(".data").css("display","none");
-          $(".kucho").css("display","none");
         });
       }
   
