@@ -8,38 +8,52 @@
     <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
     <link rel="stylesheet" href="./nuncss.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./hover.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+   <h1 style="text-align:center">Please Enter your data here! </h1>
+  
+  
     <form>
-        <div class="w3-panel w3-border w3-round-xxlarge w3-teal">
-        <div class="w3-panel w3-border w3-round-xxlarge w3-teal">
-            <label for="name">Patient name</label>
+        <div class="w3-panel w3-border w3-round-xxlarge w3-green">
+        <div class="w3-panel w3-border w3-round-xxlarge w3-blue">
+            <label for="name">Patient name --></label>
             <input type="text" id="name" placeholder="Patient name" required/>
         </div>
-        <div class="w3-panel w3-border w3-round-xxlarge w3-teal">
-            <label for="age">Patient Age </label>
+        <div class="w3-panel w3-border w3-round-xxlarge w3-blue">
+            <label for="age">Patient Age --></label>
             <input type="text" id="age" placeholder="Patient Age" required/>
         </div>
-        <div class="w3-panel w3-border w3-round-xxlarge w3-teal">
-            <label for="ilaaj">Dignostic</label>
+        <div class="w3-panel w3-border w3-round-xxlarge w3-blue">
+            <label for="ilaaj"> Dignostics Performed-></label>
             <input type="text" id="ilaaj" placeholder="Patient History" required/>
         </div>
-        <div class="w3-panel w3-border w3-round-xxlarge w3-teal">
-            <label for="kharcha">Amount paid</label>
-            <input type="number" id="kharcha" placeholder="Amount paid" required/>
+        <div class="w3-panel w3-border w3-round-xxlarge w3-blue">
+            <label for="kharcha">Amount paid--></label>
+            <input type="text" id="kharcha" placeholder="Amount paid" required/>
         </div>
         <hr>
-        <div class="BtnBox">
-            <button type="button" name="itchiBtn" id="frankyBtn" class = "w3-button w3-xlarge w3-circle w3-red w3-card-2" >Click to Add</button>
+        <div class="w3-panel w3-border w3-round-xxlarge w3-yellow">
+          <button class="button-82-pushable" role="button" id="frankyBtn">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+              Click to add
+            </span>
+            </button>
+          
+<!--          
+          <button type="button" name="itchiBtn" id="frankyBtn" class = "w3-button w3-xlarge w3-circle w3-red w3-card-2" >Click to Add</button>  -->
         </div>
         </div>
     </form>
-    <hr>
-    <hr>
     <div class="SuperBox">
-    <button type="button" name="BtnSubmit" id="SuparBtn" class = "w3-circle w3-xlarge w3-teal">View Data</button>
+    <button type="button" name="BtnSubmit" id="SuparBtn" class = "button-53">View Data</button>
   </div>
+  </div>
+
+  <!-- <a href="#">Hover Me</a> -->
 </body>
 </html>
 
@@ -72,7 +86,7 @@ const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)
 
 
-  document.getElementById('frankyBtn').addEventListener("click", myfunc);
+document.getElementById('frankyBtn').addEventListener("click", myfunc);
 
   
   function myfunc(){
@@ -81,7 +95,7 @@ const db = getFirestore(app)
     var age = document.getElementById('age').value;
     var nunAmount = document.getElementById('kharcha').value;
     
-    addDoc(collection(db, 'mugiwara'), {
+  addDoc(collection(db, 'mugiwara'), {
     name: name,
     symp: symp,
     age: age,
