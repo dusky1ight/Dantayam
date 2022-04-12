@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="table-responsive">
+        <table class="table table-bordered table-primary">
+            <thead class="thead-dark">
+                <th>Mareez ki sankhya</th>
+                <th>Patient name</th>
+                <th>Umar kitna hai</th>
+                <th>symptoms</th>
+                <th>Amount paid</th>
+            </thead>
+            <tbody id ="tbodyitchi"></tbody>
+        </table>
+    </div>
+<!--        /////////////////////////////////////////////////////////            -->
+<script type="module">
+
+var pNo = 0;
+var tbody = document.getElementById('tbodyitchi');
+
+function AddItemsToTable(zname,zage,zsymp,zmount)
+{
+    let itchirow = document.createElement('tr');
+    let titchi = document.createElement('td');
+    let tni = document.createElement('td');
+    let tsan = document.createElement('td');
+    let tyon = document.createElement('td');
+    let tgo = document.createElement('td');
+
+
+    titchi.innerHTML= ++pNo;
+    tni.innerHTML= zname;
+    tsan.innerHTML= zage;
+    tyon.innerHTML= zsymp;
+    tgo.innerHTML= zmount;
+
+    itchirow.appendChild(titchi);
+    itchirow.appendChild(tni);
+    itchirow.appendChild(tsan);
+    itchirow.appendChild(tyon);
+    itchirow.appendChild(tgo);
+
+    tbody.appendChild(itchirow);
+}
+
+function AddAllItemsToTable(DantPatient){
+    pNo = 0;
+    tbody.innerHTML= " " ;
+    DantPatient.forEach(element => {
+        AddItemsToTable(element.name, element.age, element.symp, element.nunAmount)
+        
+    });
+}
+// -------------------------------------------Intialization-----------------------------------------------------------//
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+import { getFirestore, setDoc, addDoc, doc, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyD8LJu2-xqE-tRLno-T9MvdPFzL7LwkFEg",
+    authDomain: "nbase-dbd7d.firebaseapp.com",
+    projectId: "nbase-dbd7d",
+    storageBucket: "nbase-dbd7d.appspot.com",
+    messagingSenderId: "1024335331907",
+    appId: "1:1024335331907:web:6e76e4e7f46d204e518af6"
+  };
+
+const app = initializeApp(firebaseConfig)
+const db = getFirestore(app)
+
+
+
+// ------------------   ------- -   - Get - DATA  -   -   -   -   -   -   -   -   -   -   -   --------------->>>>>>>//
+
+async function GetAllData(){
+    const querySnapshot = await getDocs(collection(db,"mugiwara"));
+    var petu= [];
+    querySnapshot.forEach(doc =>{
+        petu.push(doc.data());
+    });
+
+    AddAllItemsToTable(petu);
+}
+window.onload = GetAllData;
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
