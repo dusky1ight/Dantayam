@@ -10,22 +10,22 @@ p{
 }
 .Patienthold{
     background-color:#032530;
-    display: flow-root;
+    display:-moz-box;
     border-radius: 25px;
     color: whitesmoke;
-    border: 2px solid whitesmoke;
+    border: 2px solid greenyellow;
     max-width: 100%
 }
 input[type=text], select {
-    min-width: 30%;
+    min-width: 30rem;
     min-height: 40px ;
     padding: 20px 20px;
-    margin: 8px ;
+    margin: 0px ;
     display: inline-block;
-    border: 2px solid rgb(118, 7, 228);
+    border: 2px solid greenyellow;
     border-radius: 25px;
     box-sizing: border-box;
-    background-color:hsla(59, 90%, 53%, 0.904);
+    background-color:rgba(160, 97, 219, 0.315);
     color:black
   }
 .container{
@@ -62,7 +62,7 @@ input[type=text], select {
     font-size: 10px;
     margin: 0;
     position: absolute;
-    left: 0%;
+    left: 32%;
     width: 100%;
     height: 100%;
 
@@ -181,18 +181,20 @@ input[type=text], select {
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
   color: #000000;
-  display: flex;
+  display:grid;
+  place-items: center;
   font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
   line-height: 1.75rem;
-  padding: .75rem 1.65rem;
+  padding: 1rem;
   position: relative;
   text-align: center;
   text-decoration: none #000000 solid;
   text-decoration-thickness: auto;
   width: 100%;
+  top: 50%;
   left: 30%;
   bottom: 24px;
   max-width: 460px;
