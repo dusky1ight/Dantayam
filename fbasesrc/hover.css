@@ -1,4 +1,4 @@
- body {
+.body {
     display:block;
     justify-content:space-evenly;
     align-items:flex-end;
@@ -64,3 +64,4 @@
     left: -100%;
     opacity: 0;
   }
+

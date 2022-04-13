@@ -11,29 +11,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-   <h1 style="text-align:center">Please Enter your data here! </h1>
-  
+  <div class="suparheader">
+   <p style="text-align:center">Please Enter your data here! </p>
+</div>
   
     <form>
-      <div class="w3-panel w3-border w3-round-xxlarge w3-green">
-        <div class="w3-panel w3-border w3-round-xxlarge w3-blue">
+      
+      <div class="SuperBox">
+        <div class="Patienthold">
           <label for="name">Patient name --></label>
           <input type="text" id="pName" placeholder="Patient name" required/>
         </div>
-        <div class="w3-panel w3-border w3-round-xxlarge w3-blue">
+        <div class="Patienthold ">
           <label for="age">Patient Age --></label>
           <input type="text" id="age" placeholder="Patient Age" required/>
         </div>
-        <div class="w3-panel w3-border w3-round-xxlarge w3-blue">
+        <div class="Patienthold">
           <label for="ilaaj"> Dignostics Performed-></label>
           <input type="text" id="ilaaj" placeholder="Patient History" required/>
         </div>
-        <div class="w3-panel w3-border w3-round-xxlarge w3-blue">
+        <div class="Patienthold">
           <label for="kharcha">Amount paid--></label>
           <input type="text" id="kharcha" placeholder="Amount paid" required/>
         </div>
         <hr>
-        <div class="w3-panel w3-border w3-round-xxlarge w3-yellow">
+        <div class="SuperBox">
           <button class="button-82-pushable" type="button" id="frankyBtn">
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
@@ -44,8 +46,10 @@
         </div>
       </div>
     </form>
-  <div class="SuperBox">
-  <button type="button" name="BtnSubmit" id="SuparBtn" class = "button-53">View Data</button>
+  <div class="itchicontainer">
+  <div class="dataBox">
+  <button type="button" name="dataView" id="SuparBtn" class = "button-53">View Data</button>
+  </div>
   </div>
 </body>
 </html>
