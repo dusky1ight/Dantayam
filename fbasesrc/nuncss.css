@@ -15,10 +15,10 @@ p{
     border-radius: 25px;
     color: whitesmoke;
     border: 2px solid rgb(70, 103, 175);
-    max-width: 100%
+    
 }
 input[type=text], select {
-    min-width: 50rem;
+    
     min-height: 40px ;
     padding: 2rem 10rem;
     margin-left: 10rem;
@@ -45,7 +45,7 @@ input[type=text], select {
     font-size: 16px;
   }
 .itchicontainer{
-    display: flow-root;
+    display: block;
     max-width: 60rem;
     height:100%;
     position: relative;
@@ -53,7 +53,7 @@ input[type=text], select {
 
   }
 .dataBox {
-    display: flow-root;
+    display: block;
     background-color: #062f4f; /* Green */
     border: 2px solid greenyellow;
     color: white;
