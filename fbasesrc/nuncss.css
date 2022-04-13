@@ -14,13 +14,12 @@ p{
     border-radius: 25px;
     color: whitesmoke;
     border: 2px solid whitesmoke;
-    padding: 10px 10px;
-    max-width: 60rem
+    max-width: 100%
 }
 input[type=text], select {
     width: 49%;
-    padding: 1rem 1rem;
-    margin: 8px 0;
+    padding: 200rem 200rem;
+    margin: 8px ;
     display: inline-block;
     border: 2px solid rgb(118, 7, 228);
     border-radius: 4px;
@@ -46,10 +45,11 @@ input[type=text], select {
     text-decoration: none;
     display:-moz-stack;
     font-size: 16px;
+    width: 100rem;
   }
 .itchicontainer{
     display: flow-root;
-    width: 100%;
+    max-width: 60rem;
     height:100%;
     position: relative;
     border: 1px solid green; 
@@ -60,7 +60,6 @@ input[type=text], select {
     background-color: #062f4f; /* Green */
     border: 2px solid greenyellow;
     color: white;
-    padding: 40px 40px;
     text-align: center;
     text-decoration:none;
     font-size: 10px;
