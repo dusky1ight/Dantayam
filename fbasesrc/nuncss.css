@@ -13,7 +13,7 @@ p{
     display:-moz-box;
     border-radius: 25px;
     color: whitesmoke;
-    border: 2px solid greenyellow;
+    border: 2px solid rgb(70, 103, 175);
     max-width: 100%
 }
 input[type=text], select {
@@ -35,7 +35,7 @@ input[type=text], select {
 
 .SuperBox {
     background-color: #032530; /* Green */
-    border: 2px solid greenyellow;
+    border: 2px solid rgba(245, 154, 19, 0.61);
     color: white;
     padding: 20px 20px 20px 30px;
     text-align: center;
