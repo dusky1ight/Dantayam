@@ -17,19 +17,19 @@ p{
     max-width: 100%
 }
 input[type=text], select {
-    max-width: 49rem;
-    padding: 200rem 200rem;
+    min-width: 30%;
+    min-height: 40px ;
+    padding: 20px 20px;
     margin: 8px ;
     display: inline-block;
     border: 2px solid rgb(118, 7, 228);
-    border-radius: 4px;
+    border-radius: 25px;
     box-sizing: border-box;
     background-color:hsla(59, 90%, 53%, 0.904);
     color:black
   }
 .container{
       width: 60rem;
-      padding: 0.1em 1em;
       border: 5px black;
   }
 
