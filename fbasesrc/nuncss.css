@@ -3,6 +3,7 @@ p{
     font-size: 49px;
 }
 .suparheader{
+    display: grid;
     background-color:#4717F6;
     min-width: 100%;
     border: 10px solid #0E0B16;
@@ -37,12 +38,12 @@ input[type=text], select {
     background-color: #4da6c4b4; /* Green */
     border: 2px solid rgba(235, 168, 68, 0.822);
     color: white;
-    padding: 20px 20px 20px 30px;
+    padding: 20px 20px;
     text-align: center;
     text-decoration: none;
     display:grid;
     font-size: 16px;
-    width: 100rem;
+    min-width: 100rem;
   }
 .itchicontainer{
     display: flow-root;
@@ -181,8 +182,7 @@ input[type=text], select {
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
   color: #000000;
-  display:grid;
-  place-items: center;
+  display:block;
   font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 1rem;
   font-weight: 700;
@@ -192,18 +192,14 @@ input[type=text], select {
   position: relative;
   text-align: center;
   text-decoration: none #000000 solid;
-  text-decoration-thickness: auto;
-  width: 100%;
-  top: 50%;
-  left: 30%;
-  bottom: 24px;
   max-width: 460px;
+  left: 25em;
   position: relative;
   cursor: pointer;
-  transform: rotate(-1.5deg);
+  transform: rotate(-1.0deg);
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  touch-action: manipulation
 }
 
 .button-53:focus {
