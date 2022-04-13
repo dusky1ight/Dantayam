@@ -43,7 +43,6 @@ input[type=text], select {
     text-decoration: none;
     display:grid;
     font-size: 16px;
-    min-width: 100rem;
   }
 .itchicontainer{
     display: flow-root;
