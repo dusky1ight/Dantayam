@@ -20,7 +20,7 @@ p{
 input[type=text], select {
     min-width: 50rem;
     min-height: 40px ;
-    padding: 2rem 2rem;
+    padding: 2rem 10rem;
     margin-left: 10rem;
     display: inline-block;
     border: 2px solid greenyellow;
