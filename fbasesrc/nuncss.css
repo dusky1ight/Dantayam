@@ -29,10 +29,6 @@ input[type=text], select {
     background-color:rgba(160, 97, 219, 0.315);
     color:black
   }
-.container{
-      width: 60rem;
-      border: 5px black;
-  }
 
 .SuperBox {
     background-color: #4da6c4b4; /* Green */
@@ -43,15 +39,10 @@ input[type=text], select {
     text-decoration: none;
     display:grid;
     font-size: 16px;
+    min-width: 50%;
+    min-height: 100px;
   }
-.itchicontainer{
-    display: block;
-    max-width: 60rem;
-    height:100%;
-    position: relative;
-    border: 1px solid green; 
 
-  }
 .dataBox {
     display: block;
     background-color: #062f4f; /* Green */
@@ -61,8 +52,9 @@ input[type=text], select {
     text-decoration:none;
     font-size: 10px;
     margin: 0;
-    position: absolute;
+    position: relative;
     left: 32%;
+    min-width: 50%;
 
   }
 
@@ -225,7 +217,3 @@ input[type=text], select {
   }
 }
 
-h1{
-    font-size: 100px;
-    font-family:cursive;
-}
